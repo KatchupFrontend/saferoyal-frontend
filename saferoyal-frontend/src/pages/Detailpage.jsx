@@ -4,7 +4,8 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { Link } from "react-router-dom";
-
+import Carous from "../components/carous";
+import Iframe from 'react-iframe'
 const Detailpage = () => {
   const [property, setProperty] = useState("");
   const { id } = useParams();
@@ -163,8 +164,26 @@ const Detailpage = () => {
                   <Link to={`/checkout/${property.id}`}>Book room</Link>
                 </button>
               </div>
+              <div></div>
             </div>
           </div>
+        </div>
+        <Carous />
+        <div className="flex justify-center items-center mx-5">
+          <Iframe
+
+            url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63404.10035228852!2d-1.587294406995448!3d6.677089314065932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb948a094adce1%3A0x8f7f629ac972b054!2sAyeduase%2C%20Kumasi!5e0!3m2!1sen!2sgh!4v1670058363541!5m2!1sen!2sgh"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            height="320px"
+            width="600px"
+            id=""
+            className=""
+            display="block"
+            position="relative"
+          />
         </div>
       </section>
     </div>
