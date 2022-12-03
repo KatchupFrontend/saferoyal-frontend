@@ -1,79 +1,98 @@
 import React, { useState } from "react";
 import PaystackPop from '@paystack/inline-js'
+ import { useEffect } from "react";
+ import { useParams } from "react-router-dom";
+
+// import axios from "axios";
 
 const Checkout = () => {
+const [detail, setDetail] = useState("");
+ const { id } = useParams();
 
-  const amount = 1000000;
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
+const [email, setEmail] = useState("");
+const [name, setName] = useState("");
+const [phone, setPhone] = useState("");
+const amount = 1000000;
 
+
+  const getSingleDetail = async () => {
+    let reqOptions = {
+      url: `http://localhost:8000/api/room/${id}/`,
+      method: "GET",
+    };
+
+    let response = await axios.request(reqOptions);
+    console.log(response.data);
+    setDetail(response.data);
+  };
+
+  useEffect(() => {
+    getSingleDetail();
+  }, []);
+
+  
   const paywithPaystack = (e) => {
     e.preventDefault();
 
-     const paystack = new PaystackPop()
-     paystack.newTransaction({
-       key: "pk_test_8a43bfaae12f785768e08d5e7adf398844bf69b9",
-       email: email, 
-       amount: amount,
-       onSuccess(transaction) {
-        let msg = `Transaction Successful ${transaction.reference}`
-        alert(msg)
-        },
-        onCancel(){
-          alert("Transaction Cancelled")
-          
-        }
-     })
-  }
-
-      
-    
-
-      
-      
-
-
-
+    const paystack = new PaystackPop();
+    paystack.newTransaction({
+      key: "pk_test_8a43bfaae12f785768e08d5e7adf398844bf69b9",
+      email: email,
+      amount: amount,
+      //Successful payment
+      onSuccess(transaction) {
+        let msg = `Transaction Successful ${transaction.reference}`;
+        alert(msg);
+      },
+      onCancel() {
+        alert("Transaction Cancelled");
+      },
+    });
+  };
 
   return (
-    <div className="App">
-      <div className="container">
-        <div className="item">
-          <img />
-          <div className="item-details">
-            <p>Dancing Shoes</p>
-            <p></p>
-          </div>
-        </div>
-        <div className="checkout-form">
-          <form>
-            <label>Name</label>
-            <input
-              type="text"
-              id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-            <label>Email</label>
-            <input
-              type="text"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <label>Phone</label>
-            <input
-              type="text"
-              id="phone"
-              value={phone}
-              onChange={(e) => setPhone(e.target.value)}
-            />
-            <button type="submit" onClick={paywithPaystack}>Pay</button>
-          </form>
-        </div>
-      </div>
+    <div>
+      hei
     </div>
+    // <div className="App">
+    //   <div className="container">
+    //     <div className="item">
+    //       <img />
+    //       <div className="item-details">
+    //         <p>Dancing Shoes</p>
+    //         <p></p>
+    //       </div>
+    //     </div>
+    //     <div className="checkout-form">
+    //       <form>
+    //         <label>Name</label>
+    //         <input
+    //           type="text"
+    //           id="name"
+    //           value={name}
+    //           onChange={(e) => setName(e.target.value)}
+    //         />
+    //         <label>Email</label>
+    //         <input
+    //           type="text"
+    //           id="email"
+    //           value={email}
+    //           onChange={(e) => setEmail(e.target.value)}
+    //         />
+    //         <label>Phone</label>
+    //         <input
+    //           type="text"
+    //           id="phone"
+    //           value={phone}
+    //           onChange={(e) => setPhone(e.target.value)}
+    //         />
+    //         <button type="submit" onClick={paywithPaystack}>
+    //           Pay
+    //         </button>
+    //       </form>
+    //     </div>
+    //   </div>
+    // </div>
   );
 };
 
@@ -81,11 +100,7 @@ export default Checkout;
 
 
 // import React, { Component } from "react";
-// import { useEffect } from "react";
-// import { useState } from "react";
-// import { useParams } from "react-router-dom";
 
-// import axios from "axios";
 // import {PaystackButton} from 'react-paystack';
 
 
@@ -100,21 +115,6 @@ export default Checkout;
 // const [phone, setPhone] = useState("");
 
 
-//   const getSingleDetail = async () => {
-//     let reqOptions = {
-//       url: `http://localhost:8000/api/room/${id}/`,
-//       method: "GET",
-//     };
-
-//     let response = await axios.request(reqOptions);
-//     console.log(response.data);
-//     setDetail(response.data);
-//   };
-
-//   useEffect(() => {
-//     getSingleDetail();
-//   }, []);
-//   console.log(detail);
 
 
 
