@@ -13,7 +13,7 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 export default function Index() {
   return (
     <div className="container mx-auto">
-      <div className="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
+      <div className="flex items-center justify-center w-full h-full py-14 sm:py-8 px-4">
         {/* Carousel for desktop and large size devices */}
         <CarouselProvider
           className="lg:block hidden"
