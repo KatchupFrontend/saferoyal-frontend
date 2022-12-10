@@ -1,0 +1,14 @@
+
+
+.hero-image{
+    background-image: url("./assets/rooms/room1.jpg");
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://cdn.loewshotels.com/loewshotels.com-2466770763/cms/cache/v2/5f5a6e0d12749.jpg/1920x1080/fit/80/86e685af18659ee9ecca35c465603812.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+
