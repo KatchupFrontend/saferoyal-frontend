@@ -4,7 +4,7 @@ import { FaTimes } from 'react-icons/fa';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import HomeHero from './HomeHero';
-
+import logo from '../assets/logo.png'
 
 
 const Navbar = () => {
@@ -40,9 +40,7 @@ const Navbar = () => {
       <div className=" h-24 max-w-screen mx-auto z-[100]">
         <div className="flex justify-between items-center h-24  max-w-screen mx-auto px-4 text-white">
           <div className="flex items-center ">
-            <h1 className="text-3xl font-bold text-white cursor-pointer">
-              Safe<span className='text-blue-500'>Royal</span>
-            </h1>
+            <img src={logo} alt="" className="w-15 h-5 " />
           </div>
 
           <ul className="hidden md:flex ">
@@ -89,7 +87,7 @@ const Navbar = () => {
           >
             <div className="flex items-center justify-between w-full text-white">
               <img src="./log.png" height={100} width={100} alt="pic" />
-             
+
               <div onClick={() => setNav(false)} className="cursor-pointer p-3">
                 <FaTimes size={30} />
               </div>
@@ -113,7 +111,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <HomeHero/>
+        <HomeHero />
       </div>
     </div>
   );

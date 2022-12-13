@@ -53,6 +53,7 @@ const Checkout = () => {
         console.log("Nice");
         setSendPaymentDetails(true);
         setTransactionRef(transaction.ref);
+        form.reset();
       },
       onCancel() {
         alert("Transaction Cancelled");
@@ -97,60 +98,64 @@ const Checkout = () => {
                 <div className=" flex flex-col sm:flex-row xl:flex-col justify-center items-center   sm:py-0 xl:py-10 px-10 xl:w-full">
                   <img src={detail.apartmentImage} alt="" />
                 </div>
-                <div className="p-8 bg-gray-100 flex flex-col lg:w-full xl:w-3/5 ">
-                  <label className="mt-8 text-base leading-4 text-gray-800">
-                    Name
-                  </label>
-                  <div className="mt-8">
-                    <input
-                      className="border border-gray-300 p-4 rounded w-full text-base leading-4 placeholder-gray-600 text-gray-600"
-                      type="text"
-                      id="name"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                      placeholder="Full name"
-                    />
-                  </div>
-                  <label className="mt-8 text-base leading-4 text-gray-800">
-                    Email
-                  </label>
-                  <div className="mt-8">
-                    <input
-                      className="border border-gray-300 p-4 rounded w-full text-base leading-4 placeholder-gray-600 text-gray-600"
-                      type="email"
-                      placeholder="Email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                    />
-                  </div>
-                  <label className="mt-8 text-base leading-4 text-gray-800">
-                    Phone
-                  </label>
-                  <div className="mt-8">
-                    <input
-                      className="border border-gray-300 p-4 rounded w-full text-base leading-4 placeholder-gray-600 text-gray-600"
-                      type="phone"
-                      placeholder="Phone"
-                      value={phone}
-                      onChange={(e) => setPhone(e.target.value)}
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    onClick={paywithPaystack}
-                    className="mt-8 border border-transparent hover:border-gray-300 bg-gray-900 hover:bg-white text-white hover:text-gray-900 flex justify-center items-center py-4 rounded w-full"
-                  >
-                    <div>
-                      <p className="text-base leading-4">Pay $54652</p>
+                
+                  <form className="p-8 bg-gray-100 flex flex-col lg:w-full xl:w-3/5 ">
+                    <label className="mt-8 text-base leading-4 text-gray-800">
+                      Name
+                    </label>
+                    <div className="mt-8">
+                      <input
+                        className="border border-gray-300 p-4 rounded w-full text-base leading-4 placeholder-gray-600 text-gray-600"
+                        type="text"
+                        id="name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        placeholder="Full name"
+                      />
                     </div>
-                  </button>
-                </div>
+                    <label className="mt-8 text-base leading-4 text-gray-800">
+                      Email
+                    </label>
+                    <div className="mt-8">
+                      <input
+                        className="border border-gray-300 p-4 rounded w-full text-base leading-4 placeholder-gray-600 text-gray-600"
+                        type="email"
+                        placeholder="Email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                      />
+                    </div>
+                    <label className="mt-8 text-base leading-4 text-gray-800">
+                      Phone
+                    </label>
+                    <div className="mt-8">
+                      <input
+                        className="border border-gray-300 p-4 rounded w-full text-base leading-4 placeholder-gray-600 text-gray-600"
+                        type="phone"
+                        placeholder="Phone"
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
+                      />
+                    </div>
+
+                    <button
+                      type="submit"
+                      onClick={paywithPaystack}
+                      className="mt-8 border border-transparent hover:border-gray-300 bg-gray-900 hover:bg-white text-white hover:text-gray-900 flex justify-center items-center py-4 rounded w-full"
+                    >
+                      <div>
+                        <p className="text-base leading-4">Pay $54652</p>
+                      </div>
+                    </button>
+                  </form>
+              
               </div>
             </div>
           </div>
         </div>
       </main>
     </div>
-  )
-}
+  );
+};
+
+export default Checkout;
