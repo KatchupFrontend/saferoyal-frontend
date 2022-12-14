@@ -26,7 +26,7 @@ const cards = () => {
                 />
                 <div class="p-6">
                   <h2 class="tracking-widest text-sm title-font font-medium text-gray-300 ">
-                    Golden Tulip Hotel- Kumasi
+                    Kwame Nkrumah University of Science and Technology- Kumasi
                   </h2>
                 </div>
               </div>
@@ -40,7 +40,7 @@ const cards = () => {
                 />
                 <div class="p-6">
                   <h2 class="tracking-widest text-sm title-font font-medium text-gray-300 mb-1">
-                    Evandy Hostel-Kumasi
+                  Appiah-Akenten Menkah Akenten Enterpreneurship College-Kumasi
                   </h2>
                 </div>
               </div>
@@ -54,7 +54,7 @@ const cards = () => {
                 />
                 <div class="p-6">
                   <h2 class="tracking-widest text-sm title-font font-medium text-gray-300 mb-1">
-                    Fosuah Homestel-Kumasi
+                  University Of Energy and Renewal Resources-Sunyani
                   </h2>
                 </div>
               </div>

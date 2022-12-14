@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import pic7 from "../assets/images/rooms/pic02.jpg";
 import { useNavigate } from "react-router-dom";
+import toast, {Toaster} from 'react-hot-toast';
+
 
 const SignUp = () => {
   const name = useRef();
@@ -32,19 +34,48 @@ const SignUp = () => {
       if (response.status === 201) {
         //display success message
         let data = await response.json();
-        alert("Account created successfully");
-        router("/Login"); // Go to Login
+        notify();//notify takes you to login page when closed
+        
        
       }
-      //Success
+    
       
     }
   };
 
-  //protected route
+   
   
+
+  //toast function
+   const notify = () =>
+     toast.custom(
+       toast.custom((t) => (
+         <div
+          className={`${
+             t.visible ? "animate-enter" : "animate-leave"
+            } max-w-md w-full bg-white shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5`}
+         >
+           <div className="flex-1 w-0 p-4">
+             <p className="text-green-500">Account successfully created!</p>
+           </div>
+           <div className="flex border-l border-gray-200">
+             <button
+               onClick={() => 
+                {toast.dismiss(t.id);
+                router("/login")
+                }}
+               className="w-full border border-transparent rounded-none rounded-r-lg p-4 flex items-center justify-center text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+             >
+               Close
+             </button>
+           </div>
+         </div>
+       ))
+     );
+
   return (
     <div className="w-full h-screen flex">
+      <Toaster />
       <div className="grid grid-cols-1 md:grid-cols-2 m-auto h-[550px] shadow-lg shadow-gray-600 sm:max-w-[900px]">
         <div className="w-full h-[550px] hidden md:block">
           <img className="w-full h-full" src={pic7} alt="/" />

@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import PaystackPop from "@paystack/inline-js";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 // import Layout from "../../components/Layout";
-
 import axios from "axios";
+import toast,{Toaster} from "react-hot-toast";
 
 const Checkout = () => {
+  const router = useNavigate();
   const [detail, setDetail] = useState("");
   const [sendPaymentDetails, setSendPaymentDetails] = useState(false);
   const [transactionRef, setTransactionRef] = useState(false);
@@ -37,7 +39,11 @@ const Checkout = () => {
   //       bodyContent.append("email", email);
   //       bodyContent.append("password", password);
   //       bodyContent.append("phone_number", phone);
+    
+  //  transNotify = () => 
+  //  toast.success( `Transaction Successful ${transaction.reference}`);
 
+ 
   const paywithPaystack = (e) => {
     e.preventDefault();
 
@@ -46,10 +52,14 @@ const Checkout = () => {
       key: "pk_test_8a43bfaae12f785768e08d5e7adf398844bf69b9",
       email: email,
       amount: amount,
+
+
       //Successful payment
       onSuccess(transaction) {
         let msg = `Transaction Successful ${transaction.reference}`;
-        // alert(msg);
+        toast.success(msg);
+        router('/')
+        
         console.log("Nice");
         setSendPaymentDetails(true);
         setTransactionRef(transaction.ref);
@@ -84,12 +94,13 @@ const Checkout = () => {
     if (sendPaymentDetails) {
       sendDetails(transactionRef);
       setSendPaymentDetails(false);
-      console.log("Kul Lord");
+      // console.log("Kul Lord");
     }
   }, [sendPaymentDetails]);
 
   return (
     <div>
+      <Toaster/>
       <main>
         <div className="flex justify-center items-center">
           <div className="py-16 px-4 md:px-6 2xl:px-0 flex justify-center items-center 2xl:mx-auto 2xl:container ">
