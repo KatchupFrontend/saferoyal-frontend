@@ -3,10 +3,10 @@ import React from 'react'
 const Success = () => {
   return (
     <div>
-        <h1>You have successfull nooked a room </h1>
-        <p>Click  to download your invoice </p>
-
-        
+       <h3>Thank you for using our service.</h3>
+       <p>We're so happy you chose us!</p>
+        <p><Link to={"/campus"}></Link>
+          Go back to schools</p>
     </div>
   )
 }
