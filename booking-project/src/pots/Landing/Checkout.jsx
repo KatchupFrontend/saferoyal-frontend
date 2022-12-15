@@ -3,13 +3,14 @@ import PaystackPop from "@paystack/inline-js";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import {useReactToPrint} from 'react-to-print'
+import    PaymentReceipt from '../../components/PaymentReceipt'
+import {PDFDownloadLink} from  'react-pdf'
+
 // import Layout from "../../components/Layout";
 import axios from "axios";
 import toast,{Toaster} from "react-hot-toast";
 
 const Checkout = () => {
-  const componentRef = useRef();
   const router = useNavigate();
   const [detail, setDetail] = useState("");
   const [sendPaymentDetails, setSendPaymentDetails] = useState(false);
@@ -104,21 +105,16 @@ const Checkout = () => {
   }, [sendPaymentDetails]);
 
 
-  const handlePrint = useReactToPrint({
-    content: () => componentRef.current,
-    documentTitle: 'booking-receipt',
-
-    onAfterPrint: ()=>alert("receipt downloaded")
-  })
+ 
   return (
     <div>
-      <div>
-        <div ref={componentRef}>
-          <h1>Receipt</h1>
-        </div>
-        <button onClick={handlePrint}>Download receipt</button>
-      </div>
-
+     <div>
+      <PaymentReceipt
+      transactionRef={transactionRef}
+      amount={amount}
+      phone={phone}
+      />
+     </div>
       <Toaster />
       <main>
         <div className="flex justify-center items-center">
