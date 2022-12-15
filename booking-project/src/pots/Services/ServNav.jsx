@@ -113,8 +113,8 @@ const ServNav = () => {
           <h1 className="text-4xl font-bold ">
             Our Services <span className="hover:text-blue-500"></span>
           </h1>
-          <p>
-            OPION's wide range of services offered on leased rooms across the
+          <p className="text-lg">
+           SafeRoyal's wide range of services offered on leased rooms across the
             country.
           </p>
         </div>

@@ -17,6 +17,7 @@ import LandingHero from "./pots/Landing/LandingHero";
 import Campus from "./components/Campus";
 import Properties from "./components/Properties";
 import Contact from "../src/pages/Contact";
+import Success from "./pages/Success";
 const App = () => {
   return (
     <BrowserRouter>
@@ -31,7 +32,7 @@ const App = () => {
         <Route path="/About" element={<AboutPage />} />
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/Login" element={<Login />} />
-        <Route path="/success" element={<Landing />} />
+        <Route path="/success" element={<Success />} />
         <Route path="/Properties/:slug/:id" element={<Properties />} />
         <Route path="/details/:id" element={<Detailpage />} />
         <Route path="/checkout/:id" element={<Checkout />} />
