@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import    PaymentReceipt from '../../components/PaymentReceipt'
-import {PDFDownloadLink} from  'react-pdf'
+import { PDFDownloadLink } from "@react-pdf/renderer";
 
 // import Layout from "../../components/Layout";
 import axios from "axios";
@@ -109,6 +109,7 @@ const Checkout = () => {
   return (
     <div>
      <div>
+     
       <PaymentReceipt
       transactionRef={transactionRef}
       amount={amount}

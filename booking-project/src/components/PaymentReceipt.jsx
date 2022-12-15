@@ -1,5 +1,5 @@
 import React from 'react'
-import {Document, Page} from 'react-pdf'
+import {Document, Page} from '@react-pdf/renderer'
 import logo from "../assets/logo.png";
 const PaymentReceipt = ({transactionRef, amount,phone, name }) => {
   return (
