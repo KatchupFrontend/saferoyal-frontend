@@ -23,11 +23,14 @@ const Login = () => {
     bodyContent.append("email", emailValue);
     bodyContent.append("password", passwordValue);
 
-    let response = await fetch("http://localhost:8000/api/auth/login/", {
-      method: "POST",
-      body: bodyContent,
-      headers: headersList,
-    });
+    let response = await fetch(
+      "https://web-production-bbf6.up.railway.app/api/auth/login/",
+      {
+        method: "POST",
+        body: bodyContent,
+        headers: headersList,
+      }
+    );
 
     const data = await response.json();
     // Error

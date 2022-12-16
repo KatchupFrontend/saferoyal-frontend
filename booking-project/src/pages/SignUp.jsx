@@ -26,10 +26,13 @@ const SignUp = () => {
       bodyContent.append("password", passwordValue);
       bodyContent.append("phone_number", phoneNumberValue);
 
-      let response = await fetch("http://localhost:8000/api/auth/register/", {
-        method: "POST",
-        body: bodyContent,
-      });
+      let response = await fetch(
+        "https://web-production-bbf6.up.railway.app/api/auth/register/",
+        {
+          method: "POST",
+          body: bodyContent,
+        }
+      );
 
       if (response.status === 201) {
         //display success message
