@@ -29,7 +29,7 @@ const Detailpage = () => {
 
   const getSingleProperty = async () => {
     let reqOptions = {
-      url: `http://localhost:8000/api/room/${id}/`,
+      url: `http://saferoyalhostel.pythonanywhere.com/api/room/${id}/`,
       method: "GET",
     };
 
