@@ -27,7 +27,7 @@ const SignUp = () => {
       bodyContent.append("phone_number", phoneNumberValue);
 
       let response = await fetch(
-        "http://saferoyalhostel.pythonanywhere.com//api/auth/register/",
+        "http://saferoyalhostel.pythonanywhere.com/api/auth/register/",
         {
           method: "POST",
           body: bodyContent,
