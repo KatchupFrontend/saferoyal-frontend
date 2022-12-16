@@ -24,7 +24,7 @@ const Login = () => {
     bodyContent.append("password", passwordValue);
 
     let response = await fetch(
-      "https://web-production-bbf6.up.railway.app/api/auth/login/",
+      "http://saferoyalhostel.pythonanywhere.com/api/auth/login/",
       {
         method: "POST",
         body: bodyContent,
