@@ -16,7 +16,8 @@ const Login = () => {
     const passwordValue = password.current.value;
     let headersList = {
       Accept: "*/*",
-      "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+      "User-Agent":
+        "Thunder Client (http://saferoyalhostel.pythonanywhere.com)",
     };
 
     let bodyContent = new FormData();
