@@ -88,10 +88,13 @@ const Checkout = () => {
     // bodyContent.append("ref", transaction.reference);
     bodyContent.append("ref", ref);
 
-    let response = await fetch("http://localhost:8000/api/payments/", {
-      method: "POST",
-      body: bodyContent,
-    });
+    let response = await fetch(
+      "https://saferoyalhostel.pythonanywhere.com/api/payments/",
+      {
+        method: "POST",
+        body: bodyContent,
+      }
+    );
     let data = await response.json();
     console.log(data);
   };
