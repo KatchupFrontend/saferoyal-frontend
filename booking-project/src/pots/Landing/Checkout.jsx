@@ -64,7 +64,7 @@ const Checkout = () => {
       onSuccess(transaction) {
         let msg = `Transaction Successful ${transaction.reference}`;
         toast.success(msg);
-        router('/')
+      
         
         console.log("Nice");
         setSendPaymentDetails(true);
