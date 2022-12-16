@@ -1,7 +1,7 @@
 import React from "react";
 import ServHero from '../components/servHero'
 import ServNav from "../pots/Services/ServNav";
-import Footer from "../pots/Home/Footer";
+import Footer from '../components/Footer'
 const Services = () => {
   return (
     <div>
