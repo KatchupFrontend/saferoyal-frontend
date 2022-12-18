@@ -18,13 +18,16 @@ import Campus from "./components/Campus";
 import Properties from "./components/Properties";
 import Contact from "../src/pages/Contact";
 import Success from "./pages/Success";
+
+const NotFound = () => <h1>404 - Page Not Found</h1>;
+
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
 
         {/**Protecting route */}
-
+           <Route component={NotFound} />
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/campus" element={<Campus/>} />
