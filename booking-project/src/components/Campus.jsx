@@ -6,6 +6,11 @@ import { useEffect } from "react";
 const Campus = () => {
   const [campus, setCampus] = useState();
 
+
+  
+  
+
+
   useEffect(() => {
     fetch("https://saferoyalhostel.pythonanywhere.com/api/categories/")
       .then((res) => {
