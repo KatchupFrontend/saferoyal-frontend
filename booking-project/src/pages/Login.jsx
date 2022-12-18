@@ -16,8 +16,7 @@ const Login = () => {
     const passwordValue = password.current.value;
     let headersList = {
       Accept: "*/*",
-      "User-Agent":
-        "Thunder Client (http://saferoyalhostel.pythonanywhere.com)",
+      "User-Agent": "Thunder Client (https://www.thunderclient.com)",
     };
 
     let bodyContent = new FormData();
@@ -25,7 +24,7 @@ const Login = () => {
     bodyContent.append("password", passwordValue);
 
     let response = await fetch(
-      "http://saferoyalhostel.pythonanywhere.com/api/auth/login/",
+      "https://saferoyalhostel.pythonanywhere.com/api/auth/login/",
       {
         method: "POST",
         body: bodyContent,
