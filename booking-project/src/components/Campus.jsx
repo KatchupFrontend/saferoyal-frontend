@@ -7,7 +7,7 @@ const Campus = () => {
   const [campus, setCampus] = useState();
 
   useEffect(() => {
-    fetch("http://saferoyalhostel.pythonanywhere.com/api/categories/")
+    fetch("https://saferoyalhostel.pythonanywhere.com/api/categories/")
       .then((res) => {
         return res.json();
       })

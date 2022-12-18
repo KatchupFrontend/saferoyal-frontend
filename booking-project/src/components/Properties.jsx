@@ -11,7 +11,9 @@ const Properties = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch("http://saferoyalhostel.pythonanywhere.com/api/rooms/?category=" + id)
+    fetch(
+      "https://saferoyalhostel.pythonanywhere.com/api/rooms/?category=" + id
+    )
       .then((res) => {
         return res.json();
       })
