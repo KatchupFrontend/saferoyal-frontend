@@ -19,7 +19,10 @@ import Properties from "./components/Properties";
 import Contact from "../src/pages/Contact";
 import Success from "./pages/Success";
 
-const NotFound = () => <h1>404 - Page Not Found</h1>;
+//404 page
+import NotFound from "./pages/NotFound";
+
+
 
 const App = () => {
   return (
@@ -27,7 +30,7 @@ const App = () => {
       <Routes>
 
         {/**Protecting route */}
-           <Route component={NotFound} />
+        <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/campus" element={<Campus/>} />
