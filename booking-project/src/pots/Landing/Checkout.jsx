@@ -18,7 +18,7 @@ const Checkout = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
-  const amount = 1000000;
+  
 
 
 
@@ -79,7 +79,7 @@ const Checkout = () => {
     let bodyContent = new FormData();
     bodyContent.append("email", email);
     bodyContent.append("phone", phone);
-    bodyContent.append("amount", amount);
+    bodyContent.append("amount", detail.apartmentPrice);
     bodyContent.append("booked_room", detail.id);
     // bodyContent.append("ref", transaction.reference);
     bodyContent.append("ref", ref);
@@ -163,7 +163,7 @@ const Checkout = () => {
                     className="mt-8 border border-transparent hover:border-gray-300 bg-gray-900 hover:bg-white text-white hover:text-gray-900 flex justify-center items-center py-4 rounded w-full"
                   >
                     <div>
-                      <p className="text-base leading-4">Pay $54652</p>
+                      <p className="text-base leading-4">Pay Ghc{detail.apartmentPrice}</p>
                     </div>
                   </button>
                 </form>
