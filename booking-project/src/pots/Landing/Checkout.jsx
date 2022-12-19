@@ -115,7 +115,7 @@ const Checkout = () => {
             <div className="flex flex-col justify-start items-start w-full space-y-9">
               <div className="flex flex-col xl:flex-row justify-center xl:justify-between space-y-6 xl:space-y-0 xl:space-x-6 w-full ">
                 <div className=" flex flex-col sm:flex-row xl:flex-col justify-center items-center   sm:py-0 xl:py-10 px-10 xl:w-full">
-                  <img src={detail.apartmentImage} alt="" />
+                  <img src={detail.room1} alt="" />
                 </div>
 
                 <form className="p-8 bg-gray-100 flex flex-col lg:w-full xl:w-3/5 ">

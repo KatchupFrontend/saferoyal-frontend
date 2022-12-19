@@ -246,7 +246,7 @@ const Detailpage = () => {
                           <Slide index={1}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.romm2}
+                                src={property.room2}
                                 alt="black chair and white table"
                                 className="object-cover object-center w-full"
                               />
