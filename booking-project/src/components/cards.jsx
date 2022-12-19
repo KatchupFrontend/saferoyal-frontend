@@ -35,7 +35,7 @@ const cards = () => {
               <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
                 <img
                   class="lg:h-64 md:h-36 w-full object-cover object-center"
-                  src={pic3}
+                  src={pic2}
                   alt="place"
                 />
                 <div class="p-6">
@@ -49,7 +49,7 @@ const cards = () => {
               <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
                 <img
                   class="lg:h-64 md:h-36 w-full object-cover object-center"
-                  src={pic2}
+                  src={pic3}
                   alt="place"
                 />
                 <div class="p-6">
