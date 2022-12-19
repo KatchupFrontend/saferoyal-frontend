@@ -135,7 +135,7 @@ const Properties = () => {
                     <img
                       key={id}
                       className="lg:h-48 md:h-36 w-full object-cover object-center"
-                      src={room.apartmentImage}
+                      src={room.room1}
                       alt="Room"
                     />
                     <div className="p-2">

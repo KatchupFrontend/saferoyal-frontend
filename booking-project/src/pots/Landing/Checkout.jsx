@@ -3,8 +3,6 @@ import PaystackPop from "@paystack/inline-js";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import    PaymentReceipt from '../../components/PaymentReceipt'
-import { PDFDownloadLink } from "@react-pdf/renderer";
 
 // import Layout from "../../components/Layout";
 import axios from "axios";
@@ -55,18 +53,16 @@ const Checkout = () => {
 
     const paystack = new PaystackPop();
     paystack.newTransaction({
-      key: "pk_test_8a43bfaae12f785768e08d5e7adf398844bf69b9",
+      key: "pk_live_d81027f6c5f51a74c46a68851be59da7df6f7b3a",
       email: email,
       amount: amount,
-
 
       //Successful payment
       onSuccess(transaction) {
         let msg = `Transaction Successful ${transaction.reference}`;
         toast.success(msg);
-      
-        
-        console.log("Nice");
+          
+        router("/success");
         setSendPaymentDetails(true);
         setTransactionRef(transaction.ref);
         form.reset();
@@ -111,14 +107,7 @@ const Checkout = () => {
  
   return (
     <div>
-     <div>
      
-      <PaymentReceipt
-      transactionRef={transactionRef}
-      amount={amount}
-      phone={phone}
-      />
-     </div>
       <Toaster />
       <main>
         <div className="flex justify-center items-center">

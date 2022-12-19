@@ -51,7 +51,7 @@ const Detailpage = () => {
               <img
                 alt="ecommerce"
                 class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
-                src={property.apartmentImage}
+                src={property.room1}
               />
               <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                 <h2 class="text-sm title-font text-gray-500 tracking-widest">
@@ -227,7 +227,7 @@ const Detailpage = () => {
                           <Slide index={0}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room1}
                                 alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
@@ -246,7 +246,7 @@ const Detailpage = () => {
                           <Slide index={1}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.romm2}
                                 alt="black chair and white table"
                                 className="object-cover object-center w-full"
                               />
@@ -266,7 +266,7 @@ const Detailpage = () => {
                           <Slide index={2}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room3}
                                 alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
@@ -285,7 +285,7 @@ const Detailpage = () => {
                           <Slide index={3}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room1}
                                 alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
@@ -304,7 +304,7 @@ const Detailpage = () => {
                           <Slide index={4}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room2}
                                 alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
@@ -323,7 +323,7 @@ const Detailpage = () => {
                           <Slide index={5}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room3}
                                 alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
@@ -342,7 +342,7 @@ const Detailpage = () => {
                           <Slide index={6}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room1}
                                 alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
@@ -361,7 +361,7 @@ const Detailpage = () => {
                           <Slide index={7}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room2}
                                 alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
@@ -380,7 +380,7 @@ const Detailpage = () => {
                           <Slide index={8}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room3}
                                 alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
@@ -399,7 +399,7 @@ const Detailpage = () => {
                           <Slide index={9}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room1}
                                 alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
@@ -485,7 +485,7 @@ const Detailpage = () => {
                           <Slide index={0}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room2}
                                 alt="black chair and white table"
                                 className="object-cover object-center w-full"
                               />
@@ -504,7 +504,7 @@ const Detailpage = () => {
                           <Slide index={1}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room3}
                                 alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
@@ -523,7 +523,7 @@ const Detailpage = () => {
                           <Slide index={2}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room1}
                                 alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
@@ -542,7 +542,7 @@ const Detailpage = () => {
                           <Slide index={3}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room2}
                                 alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
@@ -561,7 +561,7 @@ const Detailpage = () => {
                           <Slide index={4}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room3}
                                 alt="black chair and white table"
                                 className="object-cover object-center w-full"
                               />
@@ -580,7 +580,7 @@ const Detailpage = () => {
                           <Slide index={5}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room1}
                                 alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
@@ -599,7 +599,7 @@ const Detailpage = () => {
                           <Slide index={6}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room2}
                                 alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
@@ -618,7 +618,7 @@ const Detailpage = () => {
                           <Slide index={7}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room3}
                                 alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
@@ -637,7 +637,7 @@ const Detailpage = () => {
                           <Slide index={8}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room1}
                                 alt="black chair and white table"
                                 className="object-cover object-center w-full"
                               />
@@ -656,7 +656,7 @@ const Detailpage = () => {
                           <Slide index={9}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room2}
                                 alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
@@ -675,7 +675,7 @@ const Detailpage = () => {
                           <Slide index={10}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room3}
                                 alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
@@ -694,7 +694,7 @@ const Detailpage = () => {
                           <Slide index={11}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room1}
                                 alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
@@ -780,7 +780,7 @@ const Detailpage = () => {
                           <Slide index={0}>
                             <div className="flex h-64 flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room2}
                                 alt="black chair and white table"
                                 className="object-cover object-center w-full"
                               />
@@ -799,7 +799,7 @@ const Detailpage = () => {
                           <Slide index={1}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room3}
                                 alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
@@ -818,7 +818,7 @@ const Detailpage = () => {
                           <Slide index={2}>
                             <div className="flex  flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room1}
                                 alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
@@ -837,7 +837,7 @@ const Detailpage = () => {
                           <Slide index={3}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room2}
                                 alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
@@ -856,7 +856,7 @@ const Detailpage = () => {
                           <Slide index={4}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room3}
                                 alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
@@ -875,7 +875,7 @@ const Detailpage = () => {
                           <Slide index={5}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room1}
                                 alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
@@ -894,7 +894,7 @@ const Detailpage = () => {
                           <Slide index={6}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.apartmentImage}
+                                src={property.room2}
                                 alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
