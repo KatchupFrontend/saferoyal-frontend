@@ -30,7 +30,7 @@ const Campus = () => {
               Please Select Your School
             </h1>
             <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-              We proovide you availables hostels and homestels based on school
+              We provide you availables hostels and homestels based on school
               selection.
             </p>
           </div>
@@ -39,23 +39,17 @@ const Campus = () => {
               campus.map((campus) => (
                 <div class="lg:w-1/3 sm:w-1/2 p-4 ">
                   <Link to={`/Properties/${campus.campusname}/${campus.id}`}>
-                    <div class="flex relative ">
+                    <div class="h-full border border-gray-300 rounded-lg overflow-hidden">
                       <img
-                        alt="gallery"
-                        class="absolute inset-0 w-full h-full object-cover object-center"
+                        class="lg:h-64 md:h-36 w-full object-cover object-center"
                         src={campus.campuslogo}
+                        alt="place"
                       />
-                      <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                          {campus.campuslocation} Campus
+                      <div class="p-6">
+                        <h2 class="tracking-widest text-sm title-font font-medium text-black ">
+                          {campus.campusname}-
+                          {campus.campuslocation}
                         </h2>
-                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                          {campus.campusname}
-                        </h1>
-                        <p>
-                          Find hostel and homestel rooms near{""}{" "}
-                          {campus.campusname}
-                        </p>
                       </div>
                     </div>
                   </Link>
