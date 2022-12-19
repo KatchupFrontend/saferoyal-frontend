@@ -60,7 +60,7 @@ const Properties = () => {
           </div>
         </div>
 
-        <div>
+        <div className="">
           <form action="">
             <p className="font-bold ">Search</p>
             <input

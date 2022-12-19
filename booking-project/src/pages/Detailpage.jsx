@@ -50,8 +50,10 @@ const Detailpage = () => {
             <div class="lg:w-4/5 mx-auto flex flex-wrap">
               <img
                 alt="ecommerce"
-                class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
-                src={property.room1}
+                class="lg:w-1/2 w-full lg:h-[400px] h-64 object-cover object-center rounded"
+                src={property.room1} 
+                height={300}
+                width={300}
               />
               <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                 <h2 class="text-sm title-font text-gray-500 tracking-widest">
@@ -70,7 +72,6 @@ const Detailpage = () => {
                   {property.apartmentLocation}
                 </h2>
                 <p>{property.description}</p>
-
 
                 <div class="flex justify-between my-4">
                   <span class="title-font font-medium text-2xl text-gray-900">
@@ -92,7 +93,7 @@ const Detailpage = () => {
                   className="lg:block hidden"
                   naturalSlideWidth={100}
                   isIntrinsicHeight={true}
-                  totalSlides={12}
+                  totalSlides={7}
                   visibleSlides={2}
                   step={1}
                   infinite={true}
@@ -129,22 +130,19 @@ const Detailpage = () => {
                           <Slide index={0}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.room1}
-                                alt="sitting area"
+                                src={property.room2}
+                                alt="black chair and white table"
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+                                
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
                           </Slide>
+
                           <Slide index={1}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
@@ -153,13 +151,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 1
-                                </h2>
+                                
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -173,13 +167,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -192,13 +182,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -211,13 +197,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -230,13 +212,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -249,13 +227,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+                                
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -268,13 +242,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+                                
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -287,13 +257,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+                                
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -306,13 +272,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+                                
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -350,7 +312,7 @@ const Detailpage = () => {
                   className="lg:hidden md:block hidden"
                   naturalSlideWidth={100}
                   isIntrinsicHeight={true}
-                  totalSlides={12}
+                  totalSlides={7}
                   visibleSlides={2}
                   step={1}
                   infinite={true}
@@ -387,18 +349,14 @@ const Detailpage = () => {
                           <Slide index={0}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.room2}
-                                alt="black chair and white table"
+                                src={property.room3}
+                                alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 1
-                                </h2>
+                                
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -411,13 +369,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+                                
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -430,13 +384,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+                                
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -449,13 +399,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+                                
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -468,13 +414,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+                                
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -487,13 +429,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+                                
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -506,13 +444,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+                                
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -525,13 +459,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+                                
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -548,9 +478,7 @@ const Detailpage = () => {
                                   Catalog 2
                                 </h2>
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -563,13 +491,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+                                
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -582,13 +506,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+                                
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -601,13 +521,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+                                
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -645,7 +561,7 @@ const Detailpage = () => {
                   className="block md:hidden "
                   naturalSlideWidth={100}
                   isIntrinsicHeight={true}
-                  totalSlides={12}
+                  totalSlides={7}
                   visibleSlides={1}
                   step={1}
                   infinite={true}
@@ -680,20 +596,16 @@ const Detailpage = () => {
                           className="h-full w-full flex lg:gap-8 md:gap-6 items-center justify-start transition ease-out duration-700"
                         >
                           <Slide index={0}>
-                            <div className="flex h-64 flex-shrink-0 relative w-full sm:w-auto">
+                            <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.room2}
-                                alt="black chair and white table"
+                                src={property.room3}
+                                alt="sitting area"
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 1
-                                </h2>
+                                
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -706,13 +618,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+                                
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -725,13 +633,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+                                
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -744,13 +648,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+                                
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -763,13 +663,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+                                
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -782,13 +678,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+                                
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -801,13 +693,9 @@ const Detailpage = () => {
                                 className="object-cover object-center w-full"
                               />
                               <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                                  Catalog 2
-                                </h2>
+                                
                                 <div className="flex h-full items-end pb-6">
-                                  <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                                    Minimal Interior
-                                  </h3>
+                                  
                                 </div>
                               </div>
                             </div>

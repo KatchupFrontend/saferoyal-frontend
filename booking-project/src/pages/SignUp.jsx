@@ -37,9 +37,7 @@ const SignUp = () => {
       if (response.status === 201) {
         //display success message
         let data = await response.json();
-        router("/login");//notify takes you to login page when closed
-        
-       
+        router("/campus");//navigate to campus page
       }
     
       
@@ -110,7 +108,7 @@ const SignUp = () => {
                 <input
                   ref={phoneNumber}
                   className="border p-2 mr-2 mb-4"
-                  type="text"
+                  type="tel"
                 />
 
                 <label htmlFor="">Email</label>

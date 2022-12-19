@@ -91,7 +91,7 @@ const Login = () => {
           </form>
           <div className="flex items-center ml-4">
             <p>
-              <Link to={"/Landing"}>Already have an account?</Link>
+              <Link to={"/Landing"}>Don't have an account?</Link>
             </p>
             <Link to="/SignUp">
               <p className=" text-blue-500 hover:text-blue-600 p-2">Sign up</p>

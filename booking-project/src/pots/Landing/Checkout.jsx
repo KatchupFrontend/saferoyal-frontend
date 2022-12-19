@@ -105,8 +105,8 @@ const Checkout = () => {
             <div className="py-16 px-4 md:px-6 2xl:px-0 flex justify-center items-center 2xl:mx-auto 2xl:container ">
               <div className="flex flex-col justify-start items-start w-full space-y-9">
                 <div className="flex flex-col xl:flex-row justify-center xl:justify-between space-y-6 xl:space-y-0 xl:space-x-6 w-full ">
-                  <div className=" flex flex-col sm:flex-row xl:flex-col justify-center items-center   sm:py-0 xl:py-10 px-10 xl:w-full">
-                    <img src={detail.room1} alt="pic" />
+                  <div className="h-auto flex flex-col sm:flex-row xl:flex-col justify-center items-center   sm:py-0 xl:py-10 px-10 xl:w-full">
+                    <img src={detail.room1} alt="pic" className="" />
                   </div>
 
                   <form className="p-8 bg-gray-100 flex flex-col lg:w-full xl:w-3/5 ">
@@ -141,7 +141,7 @@ const Checkout = () => {
                     <div className="mt-8">
                       <input
                         className="border border-gray-300 p-4 rounded w-full text-base leading-4 placeholder-gray-600 text-gray-600"
-                        type="phone"
+                        type="tel"
                         placeholder="Phone"
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}

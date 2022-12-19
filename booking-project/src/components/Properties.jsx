@@ -23,22 +23,26 @@ const Properties = () => {
       });
   }, []);
 
+  
+
   const filterType = (type) => {
     const filteredData = room.filter((item) => item.roomType === type);
     setRooms(filteredData);
     console.log(filteredData);
   };
 
-  const filterSearch = (e) => {
-    const searchWord = e.target.value;
-    const filteredData = room.filter((item) => {
-      return Object.values(item)
-        .join("")
-        .toLowerCase()
-        .includes(searchWord.toLowerCase());
-    });
-    setRooms(filteredData);
-  };
+  // const filterSearch = (e) => {
+  //   const searchWord = e.target.value;
+  //   const filteredData = room.filter((item) => {
+  //     return Object.values(item)
+  //       .join("")
+  //       .toLowerCase()
+  //       .includes(searchWord.toLowerCase());
+  //   });
+  //   setRooms(filteredData);
+  // };
+  
+  
 
   const filterPerson = (person) => {
     const filteredData = room.filter((item) => item.persons === person);
@@ -83,17 +87,17 @@ const Properties = () => {
                 </div>
               </div>
 
-              <div>
+              {/* <div>
                 <form action="">
                   <p className="font-bold ">Search</p>
                   <input
                     type="text"
                     className="border-gray-600  border flex items-center m-1 p-2 rounded-md form-control  w-full"
                     onChange={filterSearch}
-                    placeholder="type apartment name"
+                    placeholder="search location"
                   />
                 </form>
-              </div>
+              </div> */}
 
               <div>
                 <p className="font-bold ">Filter Persons</p>
