@@ -77,13 +77,13 @@ const SignUp = () => {
   return (
     <div className="w-full h-screen flex">
       <Toaster />
-      <div className="grid grid-cols-1 md:grid-cols-2 m-auto h-[550px] shadow-lg shadow-gray-600 sm:max-w-[900px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 m-auto h-[550px] border sm:max-w-[900px]">
         <div className="w-full h-[550px] hidden md:block">
           <img className="w-full h-full" src={pic7} alt="/" />
         </div>
         <div className="p-4 flex flex-col justify-around">
           <form>
-            <h2 className="text-4xl font-bold text-center mb-8">SafeRoyal</h2>
+            <h2 className="text-4xl font-bold text-center mb-4">SafeRoyal</h2>
             {/**Succesfully signed in */}
             {
               //   <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
@@ -96,7 +96,7 @@ const SignUp = () => {
 
             }
             <div>
-              <div className="mt-5">
+              <div className="mt-2">
                 <label htmlFor="">Name</label>
                 <input
                   ref={name}

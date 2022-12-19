@@ -132,13 +132,13 @@ const Properties = () => {
           </div>
 
           <div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-5 pt-4 pb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-5 pt-4 pb-8">
               {room.map((room) => (
                 <Link to={`/details/${room.id}`}>
-                  <div className="h-full border-2 border-gray-400 border-opacity-60 rounded-lg overflow-hidden hover:border-blue-700 duration-300 mx-5">
+                  <div className=" border-2 border-gray-400 border-opacity-60 rounded-lg overflow-hidden hover:border-blue-700 duration-300 mx-5">
                     <img
                       key={id}
-                      className="lg:h-48 md:h-36 w-full object-cover object-center"
+                      className="lg:h-64 md:h-64 w-full object-cover object-center h-64"
                       src={room.room1}
                       alt="Room"
                     />

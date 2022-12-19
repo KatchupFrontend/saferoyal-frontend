@@ -3,7 +3,8 @@ import { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
 import { BiMenuAltRight } from 'react-icons/bi';
 import { useNavigate } from 'react-router-dom';
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.png';
+import { Link } from 'react-router-dom';
 const NavLanding = () => {
   
     const [nav,setNav] = useState(false);
@@ -50,6 +51,7 @@ const NavLanding = () => {
                     className=" bg-blue-500 rounded-lg px-4 py-2 hover:bg-blue-600 m-4"
                     onClick=""
                   >
+                    <Link to={"/Login"}></Link>
                     Log out
                   </button>
                 </div>
