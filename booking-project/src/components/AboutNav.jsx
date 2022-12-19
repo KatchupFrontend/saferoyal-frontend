@@ -83,7 +83,7 @@ const AboutNav = () => {
             }
           >
             <div className="flex items-center justify-between w-full text-white">
-              <img src="./log.png" height={100} width={100} alt="" />
+              <img src={logo} height={100} width={100} alt="" />
 
               <div onClick={() => setNav(false)} className="cursor-pointer p-3">
                 <FaTimes size={30} />

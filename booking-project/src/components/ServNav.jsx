@@ -80,7 +80,7 @@ const ServNav = () => {
             }
           >
             <div className="flex items-center justify-between w-full text-white">
-              <img src="./log.png" height={100} width={100} alt="" />
+              <img src={logo} height={100} width={100} alt="" />
               {/* <img src={axes} alt="" height="" width="" className='h-40 w-40' />
                */}
               <div onClick={() => setNav(false)} className="cursor-pointer p-3">
