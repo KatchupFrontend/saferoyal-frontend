@@ -36,7 +36,7 @@ const Footer = () => {
                     <li className="mt-6">
                       <Link href="javascript:void(0)">
                         <a className="text-lg lg:text-md leading-none hover:text-gray-500 dark:hover:text-brand text-gray-50">
-                          Apartments
+                          Campuses
                         </a>
                       </Link>
                     </li>
