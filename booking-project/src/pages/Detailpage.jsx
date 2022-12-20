@@ -60,7 +60,7 @@ const Detailpage = () => {
                   {property.address}
                 </h2>
                 <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">
-                  {property.apartmentName}
+                  {property.roomType}
                 </h1>
                 <h2 class="text-lg font-bold title-font text-blue-500 tracking-widest">
                   {property.floortype} floor

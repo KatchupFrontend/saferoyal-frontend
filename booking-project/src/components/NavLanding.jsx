@@ -51,8 +51,7 @@ const NavLanding = () => {
                     className=" bg-blue-500 rounded-lg px-4 py-2 hover:bg-blue-600 m-4"
                     onClick=""
                   >
-                    <Link to={"/Login"}></Link>
-                    Log out
+                    <Link to={"/Login"}> Log out</Link>
                   </button>
                 </div>
                 <div
@@ -103,7 +102,7 @@ const NavLanding = () => {
                   </ul>
                   <div>
                     <button className=" bg-red-500 rounded-lg px-4 py-2 hover:bg-red-600 m-4">
-                      Logout
+                      <Link to={"/Login"}>Logout</Link>
                     </button>
                     {/* <a href='http://shrtco.de/ywZsv' target="_blank" className='bg-blue-600 w-full ml-3 rounded-md hover:bg-blue-800 px-4 py-2'>Register</a> */}
                   </div>

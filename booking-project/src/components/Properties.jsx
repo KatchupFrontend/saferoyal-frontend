@@ -144,7 +144,7 @@ const Properties = () => {
                     />
                     <div className="p-2">
                       <h2 className="tracking-widest text-sm title-font font-bold text-gray-400 mb-1">
-                        {room.apartmentName}
+                        {room.roomType}
                       </h2>
                       <h1 className="title-font text-lg font-medium text-gray-900 m">
                         Ghc {room.apartmentPrice}

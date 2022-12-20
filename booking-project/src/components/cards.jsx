@@ -1,7 +1,7 @@
 import React from 'react'
 import pic1 from '../assets/knust.png'
 import pic2 from "../assets/amm.jpeg";
-import pic3 from "../assets/images/rooms/pic03.jpg";
+import pic3 from "../assets/Energy.jpg";
 
 
 
@@ -40,7 +40,7 @@ const cards = () => {
                 />
                 <div class="p-6">
                   <h2 class="tracking-widest text-sm title-font font-medium text-gray-300 mb-1">
-                  Appiah-Akenten Menkah Akenten Enterpreneurship College-Kumasi
+                  Akenten Appiah-Menka University  College-Kumasi
                   </h2>
                 </div>
               </div>

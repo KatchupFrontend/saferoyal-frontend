@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 
 // import Layout from "../../components/Layout";
 import axios from "axios";
-import toast,{Toaster} from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 import { FaRestroom } from "react-icons/fa";
 import Layout from "../../components/Layout";
 
@@ -20,8 +20,6 @@ const Checkout = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const amount = detail.apartmentPrice;
-
-
 
   const getSingleDetail = async () => {
     let reqOptions = {
@@ -38,23 +36,19 @@ const Checkout = () => {
     getSingleDetail();
   }, []);
 
-
- 
   const paywithPaystack = (e) => {
     e.preventDefault();
 
     const paystack = new PaystackPop();
     paystack.newTransaction({
-      key: "pk_live_d81027f6c5f51a74c46a68851be59da7df6f7b3a",
+      key: "pk_test_73ebea9c708eaaf39f3a20ca12536f4727366a2a",
       email: email,
       amount: amount * 100,
 
       //Successful payment
       onSuccess(transaction) {
         let msg = `Transaction Successful ${transaction.reference}`;
-        toast.success(msg);
-
-        router("/success");
+        alert(msg);
         setSendPaymentDetails(true);
         setTransactionRef(transaction.ref);
         form.reset();
@@ -95,10 +89,9 @@ const Checkout = () => {
     }
   }, [sendPaymentDetails]);
 
- 
- 
   return (
     <div>
+      <Toaster/>
       <Layout>
         <main>
           <div className="flex justify-center items-center">

@@ -12,11 +12,11 @@ const servHero = () => {
         <div class="leading-relaxed">With over 500 appartments on our platform, we help our customers find a sound sleep. .</div>
       </div>
       <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-        <h2 class="title-font font-medium text-3xl text-white">200+</h2>
-        <p class="leading-relaxed">Hotels</p>
+        <h2 class="title-font font-medium text-3xl text-white">50+</h2>
+        <p class="leading-relaxed">Rooms</p>
       </div>
       <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-        <h2 class="title-font font-medium text-3xl text-white">100+</h2>
+        <h2 class="title-font font-medium text-3xl text-white">10+</h2>
         <p class="leading-relaxed">Homestels</p>
       </div>
       <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
