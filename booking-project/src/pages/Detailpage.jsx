@@ -130,7 +130,7 @@ const Detailpage = () => {
                           <Slide index={0}>
                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                               <img
-                                src={property.room2}
+                                src={property.room1}
                                 alt="black chair and white table"
                                 className="object-cover object-center w-full"
                               />

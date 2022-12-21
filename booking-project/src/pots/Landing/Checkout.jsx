@@ -41,7 +41,7 @@ const Checkout = () => {
 
     const paystack = new PaystackPop();
     paystack.newTransaction({
-      key: "pk_test_73ebea9c708eaaf39f3a20ca12536f4727366a2a",
+      key: "pk_live_ceb5e28498396c908f35a84006294fb2c4360b36",
       email: email,
       amount: amount * 100,
 
