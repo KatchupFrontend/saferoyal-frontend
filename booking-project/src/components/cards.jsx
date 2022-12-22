@@ -2,6 +2,7 @@ import React from 'react'
 import pic1 from '../assets/knust.png'
 import pic2 from "../assets/amm.jpeg";
 import pic3 from "../assets/Energy.jpg";
+import { Link } from 'react-router-dom';
 
 
 
