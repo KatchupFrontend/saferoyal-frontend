@@ -18,14 +18,16 @@ const cards = () => {
         </p>
         <div class="container px-5 py-8 mx-auto">
           <div class="flex flex-wrap -m-4">
-            <Link to={"/Login"}>
+         
               <div class="p-4 md:w-1/3">
                 <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+                     <Link to={"/Login"}>
                   <img
                     class="lg:h-64 md:h-36 w-full object-cover object-center"
                     src={pic1}
                     alt="place"
                   />
+                  </Link>
                   <div class="p-6">
                     <h2 class="tracking-widest text-sm title-font font-medium text-gray-300 ">
                       Kwame Nkrumah University of Science and Technology- Kumasi
@@ -33,39 +35,43 @@ const cards = () => {
                   </div>
                 </div>
               </div>
-            </Link>
+        
             <div class="p-4 md:w-1/3">
-              <Link to={"/Login"}>
+              
                 <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+                 <Link to={"/Login"}>
                   <img
                     class="lg:h-64 md:h-36 w-full object-cover object-center"
                     src={pic2}
                     alt="place"
                   />
+                  </Link>
                   <div class="p-6">
                     <h2 class="tracking-widest text-sm title-font font-medium text-gray-300 mb-1">
                       Akenten Appiah-Menka University College-Kumasi
                     </h2>
                   </div>
                 </div>
-              </Link>
+            
             </div>
 
             <div class="p-4 md:w-1/3">
-              <Link to={"/Login"}>
+              
                 <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+                  <Link to={"/Login"}>
                   <img
                     class="lg:h-64 md:h-36 w-full object-cover object-center"
                     src={pic3}
                     alt="place"
                   />
+                  </Link>
                   <div class="p-6">
                     <h2 class="tracking-widest text-sm title-font font-medium text-gray-300 mb-1">
                       University Of Energy and Renewal Resources-Sunyani
                     </h2>
                   </div>
                 </div>
-              </Link>
+            
             </div>
           </div>
         </div>
