@@ -4,7 +4,6 @@ import  { useRef } from "react";
 
  
 const Form = () => {
- const form = useRef();
 
   // const sendEmail = (e) => {
   //   e.preventDefault();
@@ -40,7 +39,7 @@ const Form = () => {
               We're available around the clock. Let us know how we can help!
             </p>
           </div>
-          <form onSubmit={""}>
+        
             <div className="lg:w-1/2 md:w-2/3 mx-auto">
               <div className="flex flex-wrap -m-2">
                 <div className="p-2 w-1/2">
@@ -91,11 +90,11 @@ const Form = () => {
                   </div>
                 </div>
                 <div className="p-2 w-full">
-                  <a href="powersam360@gmail.com">
+                  <a href="mailto:powersam360@gmail.com">
                     <button
                     
                       className="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg"
-                      value="Send"
+                      value=""
                     >
                       Send
                     </button>
@@ -103,7 +102,7 @@ const Form = () => {
                 </div>
               </div>
             </div>
-          </form>
+        
         </div>
       </section>
     </div>
